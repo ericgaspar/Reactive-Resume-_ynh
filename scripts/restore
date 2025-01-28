@@ -25,7 +25,7 @@ chown -R "$app:www-data" "$data_dir"
 #=================================================
 ynh_script_progression "Restoring the MySQL database..."
 
-ynh_mysql_db_shell < ./db.sql
+ynh_psql_db_shell < ./db.sql
 
 #=================================================
 # RESTORE SYSTEM CONFIGURATIONS
